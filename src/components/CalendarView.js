@@ -4,6 +4,7 @@ import { RiArrowRightFill } from "react-icons/ri";
 import '../App.css';
 import teeth from '../assets/Teeth.png';
 import arm from '../assets/arm.png';
+import avatar from '../assets/userProfile.png'
 
 const CalendarView = () => {
     const days = [
@@ -18,6 +19,11 @@ const CalendarView = () => {
 
   return (
     <div className='calendar-view'>
+        
+        <div className='header-right'>
+          <img src={avatar} alt="User" className="avatar" />
+          <button className="add-btn">+</button>
+        </div>
         <div className='calendar-header'>
             <div className='calendar-header-text'>October 2021</div>
             <div className='arrows'>

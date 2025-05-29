@@ -13,6 +13,8 @@ const Sidebar = () => {
     <div className='sidebar'>
       
       <div>
+        <h1 className="logo">Health<span className="logo-right">care.</span></h1>
+
         <div className='sidebar-general'>
           <h1 className='sidebar-heading'>General</h1>
           <div className='sidebar-item active'>
