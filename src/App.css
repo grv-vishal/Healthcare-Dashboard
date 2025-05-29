@@ -1,37 +1,29 @@
 
 .App{
     width:100vw;
-    height:100%;
+    height:800px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 25px;
-    gap:20px;
+    margin-bottom: 25px;
+    gap:40px;
     width: 100%;
 }
 
-
-.sidebar-position{
-    position: fixed;
-    top: -10px;
-    left: 0;
-    width: 150px;
-    height: 600px;
-    z-index: 500;
-}
-
-
-/*Dashboard Styles*/
+/*Main Dashboard Styles*/
 .dashboard-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    gap:40px;
+    gap:50px;
     width: 100%;
+    height: 800px;
+    margin-bottom: 20px;
 }  
 .dashboard-left{
     display: flex;
@@ -39,6 +31,7 @@
     align-items: center;
     justify-content: center;
     gap:20px;
+    height: 100%;
 }
 .dashboard-right{
     display: flex;
@@ -48,7 +41,7 @@
     background-color: #f6faff;
     width: 500px;;
     height: 100%;
-    padding: 20px;
+    padding: 25px 25px;
     gap: 20px;
 }
 
@@ -62,7 +55,7 @@
     justify-content: space-between;
     background-color: #f6faff;
     color:#b4b6b7;
-    width: 150px;
+    width: 180px;
     height:800px;
     position:relative;
     padding:0 40px;
@@ -83,11 +76,11 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
 }
 .sidebar-heading{
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 40px;
 }
 .sidebar-item{
@@ -96,6 +89,7 @@
     align-items: center;
     justify-content: start;
     font-weight: 700;
+    font-size: 17px;
     gap: 10px;
     width: 100%;  
 }
@@ -122,7 +116,7 @@
     align-items: center;
     justify-content: center;
     width: 250px;
-    height: 400px;
+    height: 350px;
     background-color: #f6faff;
     border-radius: 20px;
     padding: 30px 20px;
@@ -146,8 +140,8 @@
     
 }
 .anatomy{
-    width:350px;
-    height: 480px;
+    width:330px;
+    height: 440px;
 }
 .body-scan{
     width:60px;
@@ -216,7 +210,7 @@
     justify-content: center;
     gap:15px;
     width: 150px;
-    height: 60px;
+    height: 45px;
     background-color: #f6faff;
     border-radius: 20px;
     padding: 30px 15px;
@@ -276,7 +270,7 @@
     width: 100%;
     height: 100%;
     padding: 0 20px;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .header-center{
@@ -384,8 +378,6 @@
 
 /*CalendarView Styles*/
 .calendar-view {
-  padding: 20px;
-  border-radius: 16px;
   font-family: 'Segoe UI', sans-serif;
   color:#4f487d;
   font-weight:600;
@@ -451,7 +443,6 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
-  margin-bottom: 30px;
   width: 100%;
 
 }
@@ -504,11 +495,12 @@
   display: flex;
   gap: 20px;
   padding: 0 10px;
+  width: 100%;
 }
 
 .appointment-card {
   flex: 1;
-  padding: 16px;
+  padding: 15px;
   border-radius: 16px;
   color: white;
 }
@@ -536,10 +528,12 @@
     align-items: center;
     justify-content:space-between;
     gap: 10px;
+   
 }
 .dentist-header p{
     font-size: 15px;
     font-weight:600;
+    flex-wrap: nowrap;
 }
 .teeth-img{
     width:30px;
@@ -555,10 +549,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    width: 100%;
 }
 .physio-header p{
     font-size: 15px;
     font-weight: 600;
+    flex-wrap: nowrap;
+    min-width: 0;
 }
 .arm-img{
     width:20px;
@@ -575,6 +572,10 @@
     justify-content: center;
     width: 100%;
     color: #4f487d;
+}
+.upcoming-container p{
+    font-size: 20px;
+    font-weight: 600;
 }
 .schedule-day{
     color:#b4b6b7;
@@ -595,7 +596,7 @@
     align-items: start;
     justify-content: center;
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px 15px;
     background-color: #dde2f9;
     color:#4f487d;
     font-weight: 600;
@@ -623,7 +624,9 @@
 .activity-feed {
   background-color: #f6faff;
   border-radius: 16px;
-  padding: 15px 30px;
+  padding: 6px 15px;
+  width: 100%;
+  height:100%;
 }
 
 .activity-header {
@@ -647,8 +650,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:20px;
-  margin-top: 20px;
+  gap:15px;
+  margin-top: 8px;
 }
 
 .activity-day {
@@ -658,7 +661,8 @@
   justify-content: center;
   gap:10px;
   width: 100%;
-  padding: 0 20px;
+  height: 90px;
+  padding: 0 15px;
 
 }
 
@@ -667,18 +671,18 @@
   flex-direction: row;;
   gap: 10px;
   align-items: center;;
-  height: 100px;
+  height: 100%;
 }
 
 .bar {
-  width: 6px;
+  width: 5px;
   border-radius: 10px;
 }
 .bar-1{
-    height: 120px;
+    height: 90px;
 }
 .bar-5{
-    height: 60px;
+    height: 45px;
 }
 .bar-2{
     height: 60px;
@@ -688,13 +692,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:2x;
+    gap:4x;
+    height: 100%;
 }
 .bar-3{
     height: 20px;
 }
 .bar-4{
-    height: 30px;
+    height: 25px;
 }
 
 .bar-gray {
@@ -713,7 +718,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:50px;
+    gap:45px;
     width: 100%;
 }
 

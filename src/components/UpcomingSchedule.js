@@ -5,7 +5,7 @@ import '../App.css'
 const UpcomingSchedule = () => {
   return (
     <div className="upcoming-container">
-      <h3>The Upcoming Schedule</h3>
+      <p>The Upcoming Schedule</p>
       {Object.entries(appointments).map(([day, appointments], i) => (
         <div key={i} className='schedule-day-container'>
           <h4 className="schedule-day">On {day}</h4>
